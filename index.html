@@ -5,44 +5,173 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alissa Store - Links</title>
 <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #ffffff; color: #000; text-align: center; }
-    a { display: block; margin: 12px 0; padding: 14px; border-radius: 10px; text-decoration: none; font-size: 18px; font-weight: bold; }
-    .whats { background: #25d366; color: #fff; }
-    .insta { background: #d6249f; color: #fff; }
-    .box { margin-top: 25px; padding: 15px; border-radius: 10px; background: #f2f2f2; }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #fff5f7, #ffe9f0);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: #222;
+    }
+
+    .card {
+        background: #ffffff;
+        max-width: 420px;
+        width: 100%;
+        padding: 24px 20px 28px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        text-align: center;
+    }
+
+    .logo-circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #111;
+        margin: 0 auto 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 18px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+        padding: 14px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+    }
+
+    .btn span {
+        margin-left: 6px;
+    }
+
+    .btn-whats {
+        background: #25d366;
+        color: #fff;
+        box-shadow: 0 6px 15px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-insta {
+        background: linear-gradient(135deg, #f58529, #d6249f, #285AEB);
+        color: #fff;
+        box-shadow: 0 6px 15px rgba(214, 36, 159, 0.35);
+    }
+
+    .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        opacity: 0.96;
+    }
+
+    .section {
+        text-align: left;
+        margin-top: 16px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-weight: 600;
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .section p {
+        color: #444;
+        line-height: 1.4;
+    }
+
+    .maps-link {
+        color: #c2004a;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .maps-link:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        margin-top: 18px;
+        font-size: 11px;
+        color: #999;
+    }
 </style>
 </head>
 <body>
 
-<h2>💖 Bem-vinda à Alissa Store!</h2>
+<div class="card">
+    <div class="logo-circle">AS</div>
 
-<!-- WHATSAPP -->
-<a class="whats" href="https://wa.me/5551995703546?text=Ol%C3%A1!%20Vim%20do%20TikTok%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20pe%C3%A7as%20da%20loja.">
-📲 Falar com a loja no WhatsApp
-</a>
+    <h1>Alissa Store</h1>
+    <div class="subtitle">Moda feminina em Bom Princípio - RS</div>
 
-<!-- INSTAGRAM -->
-<a class="insta" href="https://instagram.com/alissa.storebp" target="_blank">
-📸 Instagram da loja
-</a>
+    <!-- WHATSAPP -->
+    <a class="btn btn-whats" href="https://wa.me/5551995703546?text=Ol%C3%A1!%20Vim%20do%20TikTok%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20pe%C3%A7as%20da%20loja." target="_blank">
+        💬 <span>Falar com a loja no WhatsApp</span>
+    </a>
 
-<!-- HORÁRIO -->
-<div class="box">
-    <h3>🕒 Horário de Funcionamento</h3>
-    <p>
-        Segunda a Sexta: 09h às 18h (sem fechar ao meio-dia)<br>
-        Sábados: 09h às 16h (sem fechar ao meio-dia)
-    </p>
-</div>
+    <!-- INSTAGRAM -->
+    <a class="btn btn-insta" href="https://instagram.com/alissa.storebp" target="_blank">
+        📸 <span>Ver Instagram da loja</span>
+    </a>
 
-<!-- ENDEREÇO -->
-<div class="box">
-    <h3>📍 Loja Física</h3>
-    <p>
-        Rua Maria Mendel, 354 – Centro<br>
-        Bom Princípio – Rio Grande do Sul<br>
-        <a href="https://maps.app.goo.gl/r44r3ChdtSKXRJ1T7" target="_blank">📍 Abrir no Google Maps</a>
-    </p>
+    <!-- HORÁRIO -->
+    <div class="section">
+        <div class="section-title">🕒 Horário de funcionamento</div>
+        <p>
+            Segunda a sexta: <strong>09h às 18h</strong> (sem fechar ao meio-dia)<br>
+            Sábados: <strong>09h às 16h</strong> (sem fechar ao meio-dia)
+        </p>
+    </div>
+
+    <!-- ENDEREÇO -->
+    <div class="section">
+        <div class="section-title">📍 Endereço da loja física</div>
+        <p>
+            Rua Maria Mendel, 354 – Centro<br>
+            Bom Princípio – Rio Grande do Sul<br>
+            <a class="maps-link" href="https://maps.app.goo.gl/r44r3ChdtSKXRJ1T7" target="_blank">
+                Abrir no Google Maps
+            </a>
+        </p>
+    </div>
+
+    <div class="footer">
+        © Alissa Store – todos os direitos reservados
+    </div>
 </div>
 
 </body>
